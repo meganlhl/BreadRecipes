@@ -32,10 +32,10 @@ const connection = mysql.createConnection({
     //user: 'root',
     //password: '',
     //database: 'buns_recipes' // Changed database name
-    host: 'db4free.net',
-    user: 'meganlhl12421',
+    host: 'mysql-meganlhl12421.alwaysdata.net',
+    user: '371186',
     password: '@Lhlm12421',
-    database: 'buns_recipes'
+    database: 'meganlhl12421_uniq'
 });
 
 connection.connect((err) => {
@@ -242,5 +242,5 @@ app.get('/admin', (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
