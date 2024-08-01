@@ -28,10 +28,14 @@ const upload = multer({
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'buns_recipes' // Changed database name
+    //host: 'localhost',
+    //user: 'root',
+    //password: '',
+    //database: 'buns_recipes' // Changed database name
+    host: 'db4free.net',
+    user: 'meganlhl12421',
+    password: '@Lhlm12421',
+    database: 'buns_recipes'
 });
 
 connection.connect((err) => {
